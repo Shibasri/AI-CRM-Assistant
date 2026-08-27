@@ -47,3 +47,25 @@ AI-CRM-Assistant/
 └── static/
     ├── style.css
     └── script.js
+
+    ## Architecture
+
+```text
+User
+  |
+  v
+Chat UI
+  |
+  v
+FastAPI
+  |
+  v
+CRM Agent
+  |
+  +----> CRM Tools
+  |          |
+  |          v
+  |       SQLite
+  |
+  v
+Response
